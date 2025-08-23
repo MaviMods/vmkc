@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Image as ImageIcon, Play, Trophy, Users, Calendar, X } from 'lucide-react';
+import { Image as ImageIcon, Play, Calendar, X } from 'lucide-react';
 
 const Gallery = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
@@ -9,7 +9,7 @@ const Gallery = () => {
   const categories = ['All', 'Tournaments', 'Community', 'Gameplay', 'Events'];
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}/api/gallery`) // change to your backend URL
+    fetch(`${import.meta.env.VITE_API_URL}/api/gallery`)
       .then(res => res.json())
       .then(data => setGalleryItems(data))
       .catch(err => console.error("Failed to load gallery:", err));
@@ -27,7 +27,36 @@ const Gallery = () => {
 
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8">
-      {/* ... keep your UI as is ... */}
+      {/* Header */}
+      <div className="text-center mb-10">
+        <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30 mb-6">
+          <ImageIcon className="h-4 w-4 text-cyan-400 mr-2" />
+          <span className="text-cyan-400 text-sm font-medium">Community Memories</span>
+        </div>
+        <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
+          Community <span className="text-cyan-400">Gallery</span>
+        </h1>
+        <p className="text-lg text-gray-300 max-w-2xl mx-auto">
+          Choose a category and explore our best moments!
+        </p>
+      </div>
+
+      {/* Category Selection Buttons */}
+      <div className="flex flex-wrap justify-center gap-3 mb-12">
+        {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => setSelectedCategory(category)}
+            className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
+              selectedCategory === category
+                ? 'bg-gradient-to-r from-cyan-500 to-blue-500 text-white shadow-lg shadow-cyan-500/50'
+                : 'bg-slate-800/50 text-gray-300 border border-slate-700 hover:border-cyan-500/50 hover:text-cyan-400'
+            }`}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
 
       {/* Gallery Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -38,10 +67,10 @@ const Gallery = () => {
             className="group relative bg-slate-800/30 rounded-xl overflow-hidden border border-slate-700/50 hover:border-cyan-500/50 transition-all cursor-pointer"
           >
             <div className="relative h-64 overflow-hidden">
-              <img src={item.src} alt={item.title} className="w-full h-full object-cover" />
+              <img src={item.src} alt={item.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
               {item.type === 'video' && (
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <Play className="h-10 w-10 text-white" />
+                  <Play className="h-10 w-10 text-white drop-shadow-lg" />
                 </div>
               )}
             </div>
@@ -64,6 +93,10 @@ const Gallery = () => {
             <img src={selectedItem.src} alt={selectedItem.title} className="w-full h-auto" />
             <h3 className="text-white font-bold mt-4">{selectedItem.title}</h3>
             <p className="text-gray-300">{selectedItem.description}</p>
+            <div className="flex items-center text-gray-400 text-sm mt-2">
+              <Calendar className="h-4 w-4 mr-2" />
+              {new Date(selectedItem.date).toLocaleDateString()}
+            </div>
           </div>
         </div>
       )}
