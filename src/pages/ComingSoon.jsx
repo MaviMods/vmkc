@@ -7,7 +7,7 @@ const ComingSoon = () => {
       {/* Badge */}
       <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30 mb-8">
         <Zap className="h-4 w-4 text-cyan-400 mr-2" />
-        <span className="text-cyan-400 text-sm font-medium">Kerala Valorant</span>
+        <span className="text-cyan-400 text-sm font-medium">Valorant Mobile Kerala</span>
       </div>
 
       {/* Title */}
@@ -18,7 +18,7 @@ const ComingSoon = () => {
       {/* Subtitle */}
       <p className="text-gray-300 text-lg sm:text-xl max-w-2xl mb-12">
         This page is under construction. We’re preparing something exciting 
-        for the Kerala Valorant community — stay tuned!
+        for the Valorant Mobile Kerala community — stay tuned!
       </p>
 
       {/* Discord Button */}
