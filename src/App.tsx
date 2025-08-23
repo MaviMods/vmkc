@@ -22,6 +22,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/download" element={<Download />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
+          <Route path="/discord" element={<Navigate to="https://discord.gg/HwZKKJ4CWf" replace />} />
         </Routes>
       </div>
     </Router>
