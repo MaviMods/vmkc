@@ -7,6 +7,7 @@ import Updates from './pages/Updates';
 import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Download from './pages/Download';
+import ComingSoon from './pages/ComingSoon';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/download" element={<Download />} />
+          <Route path="/comingsoon" element={<ComingSoon />} />
         </Routes>
       </div>
     </Router>
