@@ -9,7 +9,7 @@ const Navigation = () => {
   const navItems = [
     { path: '/', label: 'Home' },
     { path: '/staff', label: 'Staff' },
-    { path: '/updates', label: 'Updates' },
+    { path: '/comingsoon', label: 'Updates' },
     { path: '/gallery', label: 'Gallery' },
     { path: '/download', label: 'Download' },
     { path: '/contact', label: 'Contact' },
@@ -24,7 +24,6 @@ const Navigation = () => {
             <div className="p-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg group-hover:shadow-lg group-hover:shadow-cyan-500/50 transition-all duration-300">
               <Shield className="h-6 w-6 text-white" />
             </div>
-            <span className="font-bold text-white text-xl">Kerala Valorant</span>
           </Link>
 
           {/* Desktop Navigation */}
