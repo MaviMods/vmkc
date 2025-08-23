@@ -58,7 +58,7 @@ const Home = () => {
               </Link>
               
               <Link
-                to="/updates"
+                to="/comingsoon"
                 className="inline-flex items-center px-8 py-4 bg-slate-800/50 border border-slate-700 rounded-lg text-gray-300 font-semibold hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300"
               >
                 Latest Updates
@@ -93,25 +93,6 @@ const Home = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
                 <p className="text-gray-400 leading-relaxed">{feature.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-slate-800/50 to-slate-700/50">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { label: 'Active Members', value: '2,500+' },
-              { label: 'Tournaments', value: '50+' },
-              { label: 'Prize Money', value: '₹1L+' },
-              { label: 'Success Rate', value: '98%' },
-            ].map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-3xl sm:text-4xl font-bold text-cyan-400 mb-2">{stat.value}</div>
-                <div className="text-gray-400 text-sm sm:text-base">{stat.label}</div>
               </div>
             ))}
           </div>
