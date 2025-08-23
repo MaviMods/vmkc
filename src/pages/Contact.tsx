@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   MessageCircle, Mail, MapPin, Send,
-  Disc as Discord, Instagram, Twitter
+  Disc as Discord, MessageCircle as Whatsapp, Instagram, Twitter
 } from 'lucide-react';
 
 const Contact = () => {
@@ -82,6 +82,14 @@ const Contact = () => {
       action: 'Follow Us',
       color: 'from-pink-500 to-rose-500'
     },
+    {
+      icon: Whatsapp,
+      title: 'WhatsApp',
+      description: 'Latest news & updates',
+      value: 'whatsapp',
+      action: 'Join Now',
+      color: 'from-green-500 to-yellow-500'
+    }
     {
       icon: Twitter,
       title: 'Twitter',
