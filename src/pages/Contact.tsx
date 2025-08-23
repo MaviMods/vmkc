@@ -89,7 +89,7 @@ const Contact = () => {
       value: 'whatsapp',
       action: 'Join Now',
       color: 'from-green-500 to-yellow-500'
-    }
+    },
     {
       icon: Twitter,
       title: 'Twitter',
