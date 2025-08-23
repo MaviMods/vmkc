@@ -62,7 +62,7 @@ const Contact = () => {
       icon: Discord,
       title: 'Discord Server',
       description: 'Join our community',
-      value: 'https://discord.gg/HwZKKJ4CWf',
+      value: 'discord',
       action: 'Join Now',
       color: 'from-indigo-500 to-purple-500'
     },
@@ -78,7 +78,7 @@ const Contact = () => {
       icon: Instagram,
       title: 'Instagram',
       description: 'Follow our updates',
-      value: 'https://instagram.com/@vmkcoffical',
+      value: 'instagram',
       action: 'Follow Us',
       color: 'from-pink-500 to-rose-500'
     },
@@ -86,7 +86,7 @@ const Contact = () => {
       icon: Twitter,
       title: 'Twitter',
       description: 'Latest news & updates',
-      value: '@KeralaValorant',
+      value: 'twitter',
       action: 'Follow Us',
       color: 'from-blue-500 to-cyan-500'
     }
