@@ -61,7 +61,7 @@ const Download = () => {
           </h1>
           
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
-            Get the latest version of Valorant Mobile and join the Kerala gaming community. 
+            Get the latest version of Valorant Mobile and join the Valorant Mobile Kerala community. 
             Choose your platform and start your tactical shooter journey today!
           </p>
         </div>
