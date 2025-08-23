@@ -8,6 +8,10 @@ import Contact from './pages/Contact';
 import Gallery from './pages/Gallery';
 import Download from './pages/Download';
 import ComingSoon from './pages/ComingSoon';
+import DiscordRedirect from './redirect/DiscordRedirect';
+import InstagramRedirect from './redirect/InstagramRedirect';
+import TwitterRedirect from './redirect/TwitterRedirect';
+import WhatsappRedirect from './redirect/WhatsappRedirect';
 
 function App() {
   return (
@@ -22,7 +26,10 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/download" element={<Download />} />
           <Route path="/comingsoon" element={<ComingSoon />} />
-          <Route path="/discord" element={<Navigate to="https://discord.gg/HwZKKJ4CWf" replace />} />
+          <Route path="/discord" element={<DiscordRedirect />} />
+          <Route path="/instagram" element={<InstagramRedirect />} />
+          <Route path="/twitter" element={<TwitterRedirect />} />
+          <Route path="/whatsapp" element={<WhatsappRedirect />} />
         </Routes>
       </div>
     </Router>
