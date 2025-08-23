@@ -4,9 +4,9 @@ import io from "socket.io-client";
 
 const roleLabels: Record<string, string> = {
   director: "Director",
-  dev: "Developers",
+  dev: "Dev",
   serveradmins: "Server Admins",
-  admins: "Administrators",
+  admins: "Admin",
   staff: "Staff",
 };
 
