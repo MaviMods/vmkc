@@ -24,40 +24,9 @@ const Download = () => {
       downloadLink: '#',
       featured: false,
       color: 'from-blue-500 to-indigo-500'
-    },
-    {
-      platform: 'PC Emulator',
-      icon: Monitor,
-      description: 'Play on PC using recommended emulators',
-      version: 'Latest',
-      size: 'Varies',
-      requirements: 'Windows 10+, 8GB RAM, DirectX 11',
-      downloadLink: '#',
-      featured: false,
-      color: 'from-purple-500 to-pink-500'
     }
   ];
 
-  const emulatorOptions = [
-    {
-      name: 'BlueStacks',
-      description: 'Most popular Android emulator for PC gaming',
-      pros: ['Easy setup', 'Good performance', 'Key mapping'],
-      cons: ['Resource heavy', 'Ads in free version']
-    },
-    {
-      name: 'LDPlayer',
-      description: 'Gaming-focused emulator with great performance',
-      pros: ['Optimized for games', 'Multiple instances', 'Free'],
-      cons: ['Occasional stability issues']
-    },
-    {
-      name: 'NoxPlayer',
-      description: 'Feature-rich emulator with macro support',
-      pros: ['Macro recording', 'Root access', 'Good compatibility'],
-      cons: ['Can be slow on older hardware']
-    }
-  ];
 
   const features = [
     {
@@ -167,60 +136,6 @@ const Download = () => {
           ))}
         </div>
 
-        {/* Emulator Guide */}
-        <div className="mb-20">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              PC Emulator <span className="text-cyan-400">Guide</span>
-            </h2>
-            <p className="text-gray-300 max-w-2xl mx-auto">
-              Want to play on PC? Here are the best Android emulators recommended by our community
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {emulatorOptions.map((emulator, index) => (
-              <div
-                key={index}
-                className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300"
-              >
-                <h3 className="text-xl font-bold text-white mb-3">{emulator.name}</h3>
-                <p className="text-gray-400 mb-4">{emulator.description}</p>
-                
-                <div className="space-y-4">
-                  <div>
-                    <h4 className="text-sm font-semibold text-green-400 mb-2">Pros:</h4>
-                    <ul className="space-y-1">
-                      {emulator.pros.map((pro, proIndex) => (
-                        <li key={proIndex} className="flex items-start text-sm text-gray-300">
-                          <CheckCircle className="h-3 w-3 text-green-400 mt-0.5 mr-2 flex-shrink-0" />
-                          {pro}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h4 className="text-sm font-semibold text-red-400 mb-2">Cons:</h4>
-                    <ul className="space-y-1">
-                      {emulator.cons.map((con, conIndex) => (
-                        <li key={conIndex} className="flex items-start text-sm text-gray-300">
-                          <div className="h-3 w-3 bg-red-400 rounded-full mt-1 mr-2 flex-shrink-0"></div>
-                          {con}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                <button className="w-full mt-6 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-gray-300 font-medium hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300">
-                  Download {emulator.name}
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-
         {/* Installation Guide */}
         <div className="mb-20">
           <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 rounded-2xl p-8 sm:p-12 border border-slate-700/50">
@@ -250,28 +165,6 @@ const Download = () => {
                   </li>
                 </ol>
               </div>
-              
-              <div>
-                <h3 className="text-xl font-semibold text-white mb-4">PC Emulator Setup</h3>
-                <ol className="space-y-3 text-gray-300">
-                  <li className="flex items-start">
-                    <span className="bg-cyan-500 text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">1</span>
-                    Download and install your preferred emulator
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-cyan-500 text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">2</span>
-                    Configure emulator settings for gaming
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-cyan-500 text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">3</span>
-                    Install Valorant Mobile APK through emulator
-                  </li>
-                  <li className="flex items-start">
-                    <span className="bg-cyan-500 text-white text-sm rounded-full w-6 h-6 flex items-center justify-center mr-3 mt-0.5 flex-shrink-0">4</span>
-                    Set up keybinds and enjoy gaming!
-                  </li>
-                </ol>
-              </div>
             </div>
           </div>
         </div>
@@ -290,9 +183,6 @@ const Download = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
                 Get Help on Discord
-              </button>
-              <button className="px-8 py-4 bg-slate-800/50 border border-slate-700 rounded-lg text-gray-300 font-semibold hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300">
-                View FAQ
               </button>
             </div>
           </div>
