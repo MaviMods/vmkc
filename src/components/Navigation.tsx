@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Shield } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import logo from './assets/vmkc-logo.png'; // ⬅️ put your logo file in src/assets
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,10 +21,15 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="p-2 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg group-hover:shadow-lg group-hover:shadow-cyan-500/50 transition-all duration-300">
-              <Shield className="h-6 w-6 text-white" />
-            </div>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img
+              src={logo}
+              alt="VMKC Logo"
+              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
+            <span className="text-white font-bold hidden sm:inline-block">
+              VMKC
+            </span>
           </Link>
 
           {/* Desktop Navigation */}
