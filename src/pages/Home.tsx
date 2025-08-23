@@ -39,7 +39,7 @@ const Home = () => {
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Welcome to
               <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
-                Kerala Valorant
+                Valorant Mobile Kerala
               </span>
             </h1>
             
@@ -73,7 +73,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose <span className="text-cyan-400">Kerala Valorant?</span>
+              Why Choose <span className="text-cyan-400">VMKC?</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Experience the best Valorant Mobile community with exclusive features and active engagement
