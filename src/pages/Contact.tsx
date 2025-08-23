@@ -62,7 +62,7 @@ const Contact = () => {
       icon: Discord,
       title: 'Discord Server',
       description: 'Join our community',
-      value: 'discord.gg/keralaval',
+      value: 'https://discord.gg/HwZKKJ4CWf',
       action: 'Join Now',
       color: 'from-indigo-500 to-purple-500'
     },
@@ -78,7 +78,7 @@ const Contact = () => {
       icon: Instagram,
       title: 'Instagram',
       description: 'Follow our updates',
-      value: '@kerala_valorant',
+      value: 'https://instagram.com/@vmkcoffical',
       action: 'Follow Us',
       color: 'from-pink-500 to-rose-500'
     },
@@ -208,7 +208,6 @@ const Contact = () => {
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-white mb-1">{method.title}</h3>
                     <p className="text-gray-400 text-sm mb-2">{method.description}</p>
-                    <p className="text-cyan-400 font-medium">{method.value}</p>
                   </div>
                   <button className="px-4 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-gray-300 text-sm font-medium hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300">
                     {method.action}
@@ -301,7 +300,7 @@ const Contact = () => {
 
             {popup.type === 'success' && (
               <a
-                href="https://discord.gg/keralaval"
+                href="https://discord.gg/HwZKKJ4CWf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-lg text-white font-semibold"
