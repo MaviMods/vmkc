@@ -58,7 +58,7 @@ const Home = () => {
               </Link>
               
               <Link
-                to="/comingsoon"
+                to="/updates"
                 className="inline-flex items-center px-8 py-4 bg-slate-800/50 border border-slate-700 rounded-lg text-gray-300 font-semibold hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300"
               >
                 Latest Updates
