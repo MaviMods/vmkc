@@ -76,7 +76,6 @@ const Staff = () => {
                     <h3 className="text-white font-bold text-center">
                       {member.username}
                     </h3>
-                    <p className="text-cyan-400 text-center mb-2 capitalize">
                     <p className="text-red-400 text-center mb-2 capitalize">
                       {roleLabels[member.role]}
                     </p>
