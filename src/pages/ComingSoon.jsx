@@ -3,16 +3,16 @@ import { Zap } from "lucide-react";
 
 const ComingSoon = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 px-6 text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-black via-gray-900 to-black px-6 text-center">
       {/* Badge */}
-      <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30 mb-8">
-        <Zap className="h-4 w-4 text-cyan-400 mr-2" />
-        <span className="text-cyan-400 text-sm font-medium">Valorant Mobile Kerala</span>
+      <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-600/20 to-white/20 rounded-full border border-red-600/30 mb-8">
+        <Zap className="h-4 w-4 text-red-500 mr-2" />
+        <span className="text-red-500 text-sm font-medium">Valorant Mobile Kerala</span>
       </div>
 
       {/* Title */}
       <h1 className="text-4xl sm:text-6xl font-extrabold text-white mb-6">
-        Coming <span className="text-cyan-400">Soon</span>
+        Coming <span className="text-red-500">Soon</span>
       </h1>
 
       {/* Subtitle */}
@@ -26,7 +26,7 @@ const ComingSoon = () => {
         href="https://discord.gg/keralaval"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300"
+        className="px-8 py-4 bg-gradient-to-r from-red-600 to-white text-black font-semibold rounded-lg hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300"
       >
         Join Our Discord
       </a>
