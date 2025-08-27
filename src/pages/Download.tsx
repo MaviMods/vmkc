@@ -52,13 +52,13 @@ const Download = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30 mb-8">
-            <DownloadIcon className="h-4 w-4 text-cyan-400 mr-2" />
-            <span className="text-cyan-400 text-sm font-medium">Get the Game</span>
+          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-full border border-red-500/30 mb-8">
+            <DownloadIcon className="h-4 w-4 text-red-400 mr-2" />
+            <span className="text-red-400 text-sm font-medium">Get the Game</span>
           </div>
           
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Download <span className="text-cyan-400">Valorant Mobile</span>
+            Download <span className="text-red-400">Valorant Mobile</span>
           </h1>
           
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
@@ -72,10 +72,10 @@ const Download = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 text-center"
+              className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 text-center"
             >
-              <div className="p-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-lg inline-flex mb-4">
-                <feature.icon className="h-6 w-6 text-cyan-400" />
+              <div className="p-3 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-lg inline-flex mb-4">
+                <feature.icon className="h-6 w-6 text-red-400" />
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">{feature.title}</h3>
               <p className="text-gray-400">{feature.description}</p>
@@ -86,10 +86,10 @@ const Download = () => {
         {/* Download Options */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-20">
           <div
-            className="relative bg-slate-800/30 backdrop-blur-sm rounded-xl p-8 border border-cyan-500/50 hover:shadow-lg hover:shadow-cyan-500/20 transition-all duration-300"
+            className="relative bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-red-500/50 hover:shadow-lg hover:shadow-red-500/20 transition-all duration-300"
           >
             <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-              <div className="bg-gradient-to-r from-cyan-500 to-blue-500 text-white text-xs font-bold px-4 py-1 rounded-full">
+              <div className="bg-gradient-to-r from-red-500 to-red-600 text-white text-xs font-bold px-4 py-1 rounded-full">
                 RECOMMENDED
               </div>
             </div>
@@ -107,15 +107,15 @@ const Download = () => {
                 <div className="space-y-3 mb-6">
                   <div className="flex justify-between">
                     <span className="text-gray-300">File:</span>
-                    <span className="text-cyan-400 font-medium">{fileData.name}</span>
+                    <span className="text-red-400 font-medium">{fileData.name}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-300">Size:</span>
-                    <span className="text-cyan-400 font-medium">{fileData.size}</span>
+                    <span className="text-red-400 font-medium">{fileData.size}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-300">Version:</span>
-                    <span className="text-cyan-400 font-medium">{fileData.version}</span>
+                    <span className="text-red-400 font-medium">{fileData.version}</span>
                   </div>
                   <div className="pt-2 border-t border-slate-700">
                     <p className="text-sm text-gray-400 mb-2">Requirements:</p>
@@ -126,7 +126,7 @@ const Download = () => {
                 <a
                   href={fileData.link}
                   download
-                  className="block text-center w-full py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-[1.02] bg-gradient-to-r from-cyan-500 to-blue-500 text-white hover:shadow-lg hover:shadow-cyan-500/50"
+                  className="block text-center w-full py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-[1.02] bg-gradient-to-r from-red-500 to-red-600 text-white hover:shadow-lg hover:shadow-red-500/50"
                 >
                   <DownloadIcon className="h-5 w-5 inline mr-2" />
                   Download Now
@@ -140,8 +140,8 @@ const Download = () => {
 
         {/* Support Section */}
         <div className="text-center">
-          <div className="bg-slate-800/30 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border border-slate-700/50">
-            <Monitor className="h-16 w-16 text-cyan-400 mx-auto mb-6" />
+          <div className="bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 sm:p-12 border border-gray-700/50">
+            <Monitor className="h-16 w-16 text-red-400 mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-white mb-4">
               Need Help with Installation?
             </h2>
@@ -151,6 +151,7 @@ const Download = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300">
+              <button className="px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300">
                 Get Help on Discord
               </button>
             </div>

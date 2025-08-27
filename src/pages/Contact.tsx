@@ -105,12 +105,12 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30 mb-8">
-            <MessageCircle className="h-4 w-4 text-cyan-400 mr-2" />
-            <span className="text-cyan-400 text-sm font-medium">Get in Touch</span>
+          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-full border border-red-500/30 mb-8">
+            <MessageCircle className="h-4 w-4 text-red-400 mr-2" />
+            <span className="text-red-400 text-sm font-medium">Get in Touch</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Contact <span className="text-cyan-400">Our Team</span>
+            Contact <span className="text-red-400">Our Team</span>
           </h1>
           <p className="text-xl text-gray-300 mb-12 max-w-3xl mx-auto">
             Have questions, feedback, or need support? We're here to help!
@@ -119,7 +119,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50">
+          <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50">
             <h2 className="text-2xl font-bold text-white mb-6">Send us a Message</h2>
             
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -132,7 +132,7 @@ const Contact = () => {
                     value={formData.name}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white"
+                    className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white"
                   />
                 </div>
                 <div>
@@ -143,7 +143,7 @@ const Contact = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white"
+                    className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white"
                   />
                 </div>
               </div>
@@ -157,7 +157,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   placeholder="e.g. mavi_dev"
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white"
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white"
                 />
               </div>
 
@@ -168,7 +168,7 @@ const Contact = () => {
                   value={formData.subject}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white"
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white"
                 >
                   <option value="">Select a subject</option>
                   {subjects.map((s) => (
@@ -185,14 +185,14 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={6}
-                  className="w-full px-4 py-3 bg-slate-700/50 border border-slate-600 rounded-lg text-white"
+                  className="w-full px-4 py-3 bg-gray-700/50 border border-gray-600 rounded-lg text-white"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white font-semibold disabled:opacity-50"
+                className="w-full inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 rounded-lg text-white font-semibold disabled:opacity-50"
               >
                 <Send className="h-5 w-5 mr-2" />
                 {loading ? 'Sending...' : 'Send Message'}
@@ -207,7 +207,7 @@ const Contact = () => {
             {contactMethods.map((method, index) => (
               <div
                 key={index}
-                className="group bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10"
+                className="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-red-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10"
               >
                 <div className="flex items-center space-x-4">
                   <div className={`p-3 bg-gradient-to-r ${method.color} rounded-lg shadow-lg`}>
@@ -221,7 +221,7 @@ const Contact = () => {
                     href={method.value}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 bg-slate-700/50 border border-slate-600 rounded-lg text-gray-300 text-sm font-medium hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300"
+                    className="px-4 py-2 bg-gray-700/50 border border-gray-600 rounded-lg text-gray-300 text-sm font-medium hover:border-red-500/50 hover:text-red-400 transition-all duration-300"
                   >
                     {method.action}
                   </a>
@@ -230,7 +230,7 @@ const Contact = () => {
             ))}
 
             {/* Location Info */}
-            <div className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50">
+            <div className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50">
               <div className="flex items-start space-x-4">
                 <div className="p-3 bg-gradient-to-r from-green-500 to-teal-500 rounded-lg shadow-lg">
                   <MapPin className="h-6 w-6 text-white" />
@@ -247,20 +247,20 @@ const Contact = () => {
             </div>
 
             {/* Response Time */}
-            <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 rounded-xl p-6 border border-slate-700/50">
+            <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 rounded-xl p-6 border border-gray-700/50">
               <h3 className="text-lg font-semibold text-white mb-3">Response Times</h3>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-gray-300">Discord Messages:</span>
-                  <span className="text-cyan-400 font-medium">5-15 minutes</span>
+                  <span className="text-red-400 font-medium">5-15 minutes</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-300">Email Support:</span>
-                  <span className="text-cyan-400 font-medium">2-4 hours</span>
+                  <span className="text-red-400 font-medium">2-4 hours</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-300">General Inquiries:</span>
-                  <span className="text-cyan-400 font-medium">Within 24 hours</span>
+                  <span className="text-red-400 font-medium">Within 24 hours</span>
                 </div>
               </div>
             </div>
@@ -269,7 +269,7 @@ const Contact = () => {
 
         {/* FAQ Section */}
         <div className="mt-20">
-          <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 rounded-2xl p-8 sm:p-12 border border-slate-700/50">
+          <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 rounded-2xl p-8 sm:p-12 border border-gray-700/50">
             <h2 className="text-3xl font-bold text-white mb-8 text-center">
               Frequently Asked Questions
             </h2>
@@ -305,7 +305,7 @@ const Contact = () => {
       {/* Popup Modal */}
       {popup && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50">
-          <div className="bg-slate-800 p-6 rounded-xl max-w-sm w-full border border-slate-700 text-center">
+          <div className="bg-gray-800 p-6 rounded-xl max-w-sm w-full border border-gray-700 text-center">
             <h2 className={`text-xl font-bold mb-4 ${popup.type === 'success' ? 'text-green-400' : 'text-red-400'}`}>
               {popup.type === 'success' ? '✅ Success!' : '❌ Error'}
             </h2>
@@ -324,7 +324,7 @@ const Contact = () => {
 
             <button
               onClick={() => setPopup(null)}
-              className="mt-4 block w-full px-4 py-2 rounded-lg bg-slate-700 text-gray-300 hover:bg-slate-600"
+              className="mt-4 block w-full px-4 py-2 rounded-lg bg-gray-700 text-gray-300 hover:bg-gray-600"
             >
               Close
             </button>
