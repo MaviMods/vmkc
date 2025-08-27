@@ -16,7 +16,7 @@ import WhatsappRedirect from './redirect/WhatsappRedirect';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900">
+      <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black">
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />

@@ -25,20 +25,20 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 via-transparent to-blue-500/10"></div>
-        <div className="absolute top-20 left-10 w-32 h-32 bg-cyan-500/20 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-blue-500/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-red-600/10"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-red-500/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-red-600/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
-            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30 mb-8">
-              <Star className="h-4 w-4 text-cyan-400 mr-2" />
-              <span className="text-cyan-400 text-sm font-medium">Kerala's Premier Valorant Mobile Community</span>
+            <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-full border border-red-500/30 mb-8">
+              <Star className="h-4 w-4 text-red-400 mr-2" />
+              <span className="text-red-400 text-sm font-medium">Kerala's Premier Valorant Mobile Community</span>
             </div>
             
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Welcome to
-              <span className="block bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-red-400 to-red-500 bg-clip-text text-transparent">
                 Valorant Mobile Kerala
               </span>
             </h1>
@@ -51,7 +51,7 @@ const Home = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 to="/contact"
-                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105"
+                className="group inline-flex items-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
               >
                 Join Discord
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -59,7 +59,7 @@ const Home = () => {
               
               <Link
                 to="/updates"
-                className="inline-flex items-center px-8 py-4 bg-slate-800/50 border border-slate-700 rounded-lg text-gray-300 font-semibold hover:border-cyan-500/50 hover:text-cyan-400 transition-all duration-300"
+                className="inline-flex items-center px-8 py-4 bg-gray-800/50 border border-gray-700 rounded-lg text-gray-300 font-semibold hover:border-red-500/50 hover:text-red-400 transition-all duration-300"
               >
                 Latest Updates
               </Link>
@@ -73,7 +73,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Why Choose <span className="text-cyan-400">VMKC?</span>
+              Why Choose <span className="text-red-400">VMKC?</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-2xl mx-auto">
               Experience the best Valorant Mobile community with exclusive features and active engagement
@@ -84,11 +84,11 @@ const Home = () => {
             {features.map((feature, index) => (
               <div
                 key={index}
-                className="group bg-slate-800/30 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10"
+                className="group bg-gray-800/30 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 hover:border-red-500/50 transition-all duration-300 hover:shadow-lg hover:shadow-red-500/10"
               >
                 <div className="mb-6">
-                  <div className="inline-flex p-3 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-lg group-hover:shadow-lg group-hover:shadow-cyan-500/30 transition-all duration-300">
-                    <feature.icon className="h-8 w-8 text-cyan-400" />
+                  <div className="inline-flex p-3 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-lg group-hover:shadow-lg group-hover:shadow-red-500/30 transition-all duration-300">
+                    <feature.icon className="h-8 w-8 text-red-400" />
                   </div>
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{feature.title}</h3>
@@ -102,8 +102,8 @@ const Home = () => {
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-slate-800/50 to-slate-700/50 rounded-2xl p-8 sm:p-12 border border-slate-700/50">
-            <Target className="h-16 w-16 text-cyan-400 mx-auto mb-6" />
+          <div className="bg-gradient-to-r from-gray-800/50 to-gray-700/50 rounded-2xl p-8 sm:p-12 border border-gray-700/50">
+            <Target className="h-16 w-16 text-red-400 mx-auto mb-6" />
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
               Ready to Join the Battle?
             </h2>
@@ -112,7 +112,7 @@ const Home = () => {
             </p>
             <Link
               to="/contact"
-              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-cyan-500/50 transition-all duration-300 transform hover:scale-105"
+              className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-red-500 to-red-600 rounded-lg text-white font-semibold hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300 transform hover:scale-105"
             >
               Join Now
               <ArrowRight className="ml-2 h-5 w-5" />

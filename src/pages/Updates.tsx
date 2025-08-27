@@ -22,7 +22,7 @@ const Updates = () => {
   return (
     <div className="min-h-screen py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
       <div className="text-center mb-12">
-        <Zap className="h-10 w-10 text-cyan-400 mx-auto mb-4" />
+        <Zap className="h-10 w-10 text-red-400 mx-auto mb-4" />
         <h1 className="text-4xl font-bold text-white">Community Updates</h1>
         <p className="text-gray-400 mt-2">Fetched directly from our Discord server 🚀</p>
       </div>
@@ -31,7 +31,7 @@ const Updates = () => {
         {updates.map(update => (
           <div
             key={update.id}
-            className="bg-slate-800/30 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition"
+            className="bg-gray-800/30 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 hover:border-red-500/50 transition"
           >
             {/* Author */}
             <div className="flex items-center mb-4">
@@ -67,10 +67,11 @@ const Updates = () => {
                 {update.embeds.map((embed: any, i: number) => (
                   <div
                     key={i}
-                    className="bg-slate-900/50 p-4 rounded-lg border border-slate-700"
+                    className="bg-gray-900/50 p-4 rounded-lg border border-gray-700"
                   >
                     {embed.title && (
                       <h3 className="text-lg font-bold text-cyan-400 mb-2">
+                      <h3 className="text-lg font-bold text-red-400 mb-2">
                         {embed.title}
                       </h3>
                     )}
@@ -82,7 +83,7 @@ const Updates = () => {
                         href={embed.url}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center mt-2 text-cyan-400 hover:underline"
+                        className="inline-flex items-center mt-2 text-red-400 hover:underline"
                       >
                         <ExternalLink className="h-4 w-4 mr-1" />
                         Open Link

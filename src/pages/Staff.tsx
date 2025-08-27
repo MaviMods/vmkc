@@ -43,12 +43,12 @@ const Staff = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-500/20 to-blue-500/20 rounded-full border border-cyan-500/30 mb-8">
-            <Shield className="h-4 w-4 text-cyan-400 mr-2" />
-            <span className="text-cyan-400 text-sm font-medium">Meet Our Team</span>
+          <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-red-500/20 to-red-600/20 rounded-full border border-red-500/30 mb-8">
+            <Shield className="h-4 w-4 text-red-400 mr-2" />
+            <span className="text-red-400 text-sm font-medium">Meet Our Team</span>
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-6">
-            Discord <span className="text-cyan-400">Staff Team</span>
+            Discord <span className="text-red-400">Staff Team</span>
           </h1>
         </div>
 
@@ -59,14 +59,14 @@ const Staff = () => {
 
           return (
             <div key={roleKey} className="mb-16">
-              <h2 className="text-2xl font-bold text-cyan-400 mb-6 border-b border-slate-700 pb-2">
+              <h2 className="text-2xl font-bold text-red-400 mb-6 border-b border-gray-700 pb-2">
                 {roleLabels[roleKey]}
               </h2>
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
                 {group.map((member) => (
                   <div
                     key={member.id}
-                    className="bg-slate-800/30 p-6 rounded-xl border border-slate-700/50 hover:border-cyan-500/50 transition"
+                    className="bg-gray-800/30 p-6 rounded-xl border border-gray-700/50 hover:border-red-500/50 transition"
                   >
                     <img
                       src={member.avatar}
@@ -77,6 +77,7 @@ const Staff = () => {
                       {member.username}
                     </h3>
                     <p className="text-cyan-400 text-center mb-2 capitalize">
+                    <p className="text-red-400 text-center mb-2 capitalize">
                       {roleLabels[member.role]}
                     </p>
 
