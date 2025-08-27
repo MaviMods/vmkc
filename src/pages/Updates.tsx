@@ -70,7 +70,6 @@ const Updates = () => {
                     className="bg-gray-900/50 p-4 rounded-lg border border-gray-700"
                   >
                     {embed.title && (
-                      <h3 className="text-lg font-bold text-cyan-400 mb-2">
                       <h3 className="text-lg font-bold text-red-400 mb-2">
                         {embed.title}
                       </h3>
