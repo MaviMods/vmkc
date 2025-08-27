@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Shield } from "lucide-react";
-import io from "socket.io-client";
 
 const roleLabels: Record<string, string> = {
   director: "Director",
@@ -19,23 +18,6 @@ const Staff = () => {
     fetch(`${import.meta.env.VITE_API_URL}/api/staff`)
       .then((res) => res.json())
       .then((data) => setStaffMembers(data));
-
-    const socket = io(import.meta.env.VITE_API_URL);
-
-    socket.on("staffPresenceUpdate", (update) => {
-      setStaffMembers((prev) => {
-        const updated = prev.map((m) =>
-          m.id === update.id ? { ...m, ...update } : m
-        );
-        if (!updated.find((m) => m.id === update.id)) updated.push(update);
-
-        return updated.sort((a, b) => a.roleOrder - b.roleOrder);
-      });
-    });
-
-    return () => {
-      socket.disconnect();
-    };
   }, []);
 
   return (
